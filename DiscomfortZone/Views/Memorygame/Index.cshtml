@@ -1,0 +1,62 @@
+﻿<div class="mini-head"></div>
+<div id="gameSpace">
+
+    <div id="board" tabindex="0"
+         style="
+      width: fit-content();
+      height:fit-content();
+      display: table;
+      margin: 0 auto;
+      margin-top: 15px;
+      background-color: white;
+      ">
+    </div>
+
+    <div id="statistics"
+         style="        
+        margin-top: 10px;
+        width: 490px;
+        height: 80px;
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        padding: 5px;
+        background-color: #fde3e3;
+        border: 10px solid black;
+        opacity: 0.2;">
+
+        <div 
+             style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            ">
+            <div id="totalTimer">⏱: 0</div>
+            <div id="totalTries">🔎: 0</div>
+        </div>
+        
+    </div>
+</div>
+
+<style>
+    .masthead {
+        display: none;
+    }
+
+    .mini-head {
+        height: 100px;
+    }
+
+    @@media screen and (max-width: 540px) {
+    #board img {
+        width: 22vw;
+        height: 10vw;
+    }
+
+    #statistics {
+       display: none;
+    }
+}
+</style>
+
+<script src="~/js/memorygame.js"></script>
